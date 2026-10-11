@@ -1,0 +1,22 @@
+{
+  "name": "itsc-audit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:setup": "node --env-file=.env.local scripts/setup.mjs",
+    "test:audit": "node scripts/test-audit.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "pg": "^8.13.0"
+  },
+  "engines": { "node": ">=20" }
+}
